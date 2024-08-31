@@ -1,18 +1,20 @@
 .nav {
     border: 2px solid black;
-    padding: 50px 700px;
+    padding: 50px 50%;
 }
 
 img {
-    margin-top: 20px;
-    width: 300px;
+    margin-top: 3%;
+    width: 50%;
+    margin-left: 25%;
     display: inline-block;
 }
 
 .main-section {
+    margin-top: 3%;
     border: 2px solid black;
     display: inline-block;
     padding-top: 453.078px;
-    padding-right: 1080px;
-    margin-left: 20px;
+    padding-right: 90%;
+    margin-left: 1%;
 }
