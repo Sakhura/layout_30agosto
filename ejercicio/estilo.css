@@ -1,18 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .nav {
     border: 2px solid black;
     padding: 50px 700px;
 }
-
 img {
+    flex: 0 0 30%;
     margin-top: 20px;
-    width: 300px;
-    display: inline-block;
-}
+    width: 350px;
+    margin-right: 2%
 
+}
+.container{
+    margin-top: 10px;
+    vertical-align: super;
+}
+.izquierda {
+    float: left;
+}
 .main-section {
     border: 2px solid black;
     display: inline-block;
     padding-top: 453.078px;
     padding-right: 1080px;
     margin-left: 20px;
+}
+
+/* Media Queries para pantallas medianas (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav {
+        padding: 40px 5%; /* Ajusta el padding en pantallas medianas */
+    }
+    .container {
+        flex-direction: row; /* Mantiene los elementos en fila */
+    }
+    img {
+        flex: 0 0 35%; /* Imagen un poco más grande en pantallas medianas */
+        margin-right: 3%; /* Espacio adecuado entre la imagen y la sección principal */
+    }
+    .main-section {
+        flex: 1; /* Asegura que ocupe el espacio restante */
+        width: 60%; /* Ajusta el ancho para pantallas medianas */
+        padding-right: 5%; /* Ajuste de padding para mejorar la disposición */
+    }
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+        align-items: center;
+    }
+    img, .main-section {
+        width: 90%; /* Ambos elementos ocupan la mayor parte del ancho disponible */
+        margin: 10px auto; /* Centra los elementos con márgenes automáticos */
+    }
+    .main-section {
+        margin-left: 0; /* Elimina margen izquierdo */
+        padding-right: 0; /* Sin padding derecho en diseño vertical */
+    }
 }
